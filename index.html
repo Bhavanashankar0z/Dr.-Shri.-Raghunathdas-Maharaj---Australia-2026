@@ -1,0 +1,236 @@
+let events = [
+  {
+    date: "2026-06-03",
+    day: "Wednesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Padma Hari Babu",
+    location: "Clayton South",
+    mobile: "0413 939 612"
+  },
+  {
+    date: "2026-06-05",
+    day: "Friday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Bhavana Shankar",
+    location: "Adelaide",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-06",
+    day: "Saturday",
+    startTime: "10:30 AM",
+    finishTime: "12:30 PM",
+    host: "Bhavana Shankar",
+    location: "Adelaide",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-08",
+    day: "Monday",
+    startTime: "6:00 PM",
+    finishTime: "7:30 PM",
+    host: "Jaya Ilango",
+    location: "Point Cook",
+    mobile: "0414 150 641"
+  },
+  {
+    date: "2026-06-09",
+    day: "Tuesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Vidya Satheesh",
+    location: "Glen Waverley",
+    mobile: "0439 086 820"
+  },
+  {
+    date: "2026-06-10",
+    day: "Wednesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Bama Ganesan",
+    location: "Clarinda",
+    mobile: "0469 862 602"
+  },
+  {
+    date: "2026-06-11",
+    day: "Thursday",
+    startTime: "TBC",
+    finishTime: "TBC",
+    host: "Bhavana Shankar",
+    location: "Cranbourne North",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-12",
+    day: "Friday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Harini Karthik",
+    location: "Oakleigh South",
+    mobile: "0477 364 154"
+  },
+  {
+    date: "2026-06-13",
+    day: "Saturday",
+    startTime: "11:00 AM",
+    finishTime: "12:30 PM",
+    host: "Sumitha Mahesh",
+    location: "Cranbourne East",
+    mobile: "0403 283 170"
+  },
+  {
+    date: "2026-06-13",
+    day: "Saturday",
+    startTime: "3:00 PM",
+    finishTime: "4:30 PM",
+    host: "Sharadha Ramesh",
+    location: "Oakleigh South",
+    mobile: "0427 757 267"
+  },
+  {
+    date: "2026-06-13",
+    day: "Saturday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Harini Mahesh",
+    location: "Clayton South",
+    mobile: "0458 204 477"
+  },
+  {
+    date: "2026-06-14",
+    day: "Sunday",
+    startTime: "11:00 AM",
+    finishTime: "12:30 PM",
+    host: "Lakshmi Sudhakar",
+    location: "Glen Waverley",
+    mobile: "0422 898 679 / 0414 412 910"
+  },
+  {
+    date: "2026-06-14",
+    day: "Sunday",
+    startTime: "6:00 PM",
+    finishTime: "7:30 PM",
+    host: "Lalitha Shankar",
+    location: "Ballarat",
+    mobile: "0411 434 011"
+  },
+  {
+    date: "2026-06-15",
+    day: "Monday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Shobhana Krishnan",
+    location: "Glen Waverley",
+    mobile: "0407 016 154"
+  },
+  {
+    date: "2026-06-16",
+    day: "Tuesday",
+    startTime: "11:00 AM",
+    finishTime: "12:30 PM",
+    host: "Meera Neelakantan",
+    location: "Mentone",
+    mobile: "0469 389 913"
+  },
+  {
+    date: "2026-06-17",
+    day: "Wednesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Lavanya Sundar",
+    location: "Wantirna South",
+    mobile: "0470 252 117"
+  },
+  {
+    date: "2026-06-18",
+    day: "Thursday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Kamala Sridhar",
+    location: "Clyde North",
+    mobile: "0478 611 106"
+  },
+  {
+    date: "2026-06-19",
+    day: "Friday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Namadwaar",
+    location: "Knox",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-22",
+    day: "Monday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Priya Krupashankar",
+    location: "Clyde North",
+    mobile: "0432 173 523"
+  },
+  {
+    date: "2026-06-23",
+    day: "Tuesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Sridevi Eri",
+    location: "Noble Park North",
+    mobile: "0430 582 522"
+  },
+  {
+    date: "2026-06-24",
+    day: "Wednesday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Meera Ramanan",
+    location: "Mulgrave",
+    mobile: "0468 361 070"
+  },
+  {
+    date: "2026-06-26",
+    day: "Friday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Shilpa Vasudevan",
+    location: "Clyde North",
+    mobile: "0452 255 123"
+  },
+  {
+    date: "2026-06-27",
+    day: "Saturday",
+    startTime: "11:00 AM",
+    finishTime: "12:30 PM",
+    host: "Bhavana Shankar",
+    location: "Cranbourne North",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-27",
+    day: "Saturday",
+    startTime: "4:00 PM",
+    finishTime: "5:00 PM",
+    host: "Namalahari",
+    location: "TBC",
+    mobile: "0407 979 153"
+  },
+  {
+    date: "2026-06-27",
+    day: "Saturday",
+    startTime: "7:00 PM",
+    finishTime: "8:30 PM",
+    host: "Divya Naresh",
+    location: "Ferntree Gully",
+    mobile: "0401 435 784"
+  },
+  {
+    date: "2026-06-28",
+    day: "Sunday",
+    startTime: "11:00 AM",
+    finishTime: "12:30 PM",
+    host: "Deepa Balaji",
+    location: "Glen Waverley",
+    mobile: "0410 963 110"
+  }
+];
